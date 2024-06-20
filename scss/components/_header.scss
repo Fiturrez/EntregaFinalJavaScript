@@ -1,0 +1,51 @@
+header {
+        img {
+            width: 95px;
+            height: 74px;
+        }
+        .barraContainer{
+            background-color: $bgColorNav;
+            //background-image: $bgImgNav; 
+            padding: 10px;
+            margin: 10px;
+            .brand-mobile {
+                display: none;
+            }
+            .navbar-brand{
+                display: block;
+            }
+        
+            ul {
+                li{
+                    font-style:normal;
+                    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                    list-style-type: none; 
+                    text-decoration: none;
+                    .nav-link {
+                        color: #15907e ;
+                        font-size: 20px;
+                        margin-right: 20px;
+                    }
+                }        
+             }
+            }
+            .titulo { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 70px;
+                color: rgb(20, 94, 94);
+                font-family: "Licorice", cursive;
+                font-weight: 500;
+                font-style: normal;
+                font-weight: bold;
+                
+                .titulo2 {
+                    font-size: 40px;
+                    margin-left: 15px;
+                    
+                
+                }
+            }
+        
+}

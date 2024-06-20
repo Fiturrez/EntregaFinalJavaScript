@@ -1,0 +1,6 @@
+@mixin position ($padding, $margin, $width, $height ){
+    padding: $padding;
+    margin: $margin;
+    width: $width;
+    height: $height;
+}

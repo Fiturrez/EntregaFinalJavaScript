@@ -1,0 +1,293 @@
+//MOBILE
+@media screen and (max-width: 768px) {
+    body{
+        header{
+            .barraContainer{
+            height: auto;
+            .navbar-brand {
+                display: none;
+            }
+            .brand-mobile {
+                display: block;
+                margin: 0 auto;
+                padding: auto;
+                text-decoration: none;
+            }
+            }
+            .titulo {
+                font-size: 40px;
+                color: rgb(3, 67, 14);
+                font-weight:bolder;
+                padding-top: 10px;
+            
+                .titulo2 {
+                    font-size: 20px;
+                }
+            }
+            .h1-desktop{
+                display: none;
+            }        
+        }
+    //index
+    main {
+        h2 {
+            font-size: medium;
+            padding-bottom: 0px;
+        }
+        .carrusel{
+            display: none;
+        }
+        .carrusel-mobile {
+            display: block;
+            padding: 15px;
+        }
+        .carouselDos{
+            .image-strip img{
+                width: 40%;
+                height: 50%;
+            }
+
+        }
+        .contenedor {
+            .itemMain1{
+                display: none;
+            }
+            .itemMain2{
+                display: block;
+                padding-top:20px ;
+                p {
+                text-align: center;
+                }
+            }
+        }
+    }
+
+    //Page productos
+    main{
+        .contenedorCards {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(12, 1fr);
+            grid-template-areas:    "card1"
+                                    "card2"
+                                    "card3" 
+                                    "card4"
+                                    "card5"
+                                    "card6"
+                                    "card7" 
+                                    "card8"
+                                    "card9" 
+                                    "card10"
+                                    "card11" 
+                                    "card12";
+                              
+            max-width: 80vw;
+            grid-gap: 20px;
+            margin: 0 auto;
+            .card{
+                width: 100%;
+                margin: 0 auto;
+            }      
+        }
+    }
+
+    //Page Nosotras
+    main {
+        margin: 0, auto;
+        h2{
+            font-size: medium;
+            padding-top: 10px;
+
+        }
+        .grillaContainer {
+            height: auto;
+            width: auto;
+            gap: 10 px;
+            grid-template-columns: 1fr;
+            grid-template-rows: 0.4fr, 1fr, 0.7fr, 1fr;
+            grid-template-areas: "item1"
+                                "item2"
+                                "item3"
+                                "item4 ";
+            
+            .parrafo, .parrafo2 {
+                font-size: small;
+                text-align: justify;
+                margin: 0 auto;
+                height: 95hv;
+                padding: 0px;
+                
+            }
+            .imgNosotras, .imgNosotras2 {
+                margin: 0 auto;               
+                padding: 0px;
+                height: 95hv;
+               
+            }
+        }
+    }
+
+    //Page Donde Comprar
+    main {
+        .mainContainer {
+            width: auto;
+            height: auto;
+            margin: 0 auto  ;
+            gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                                "direccion"
+                                "mapa"
+                                "sitioTuristico"
+                                "video"
+                                ;
+            .mapa, .video {
+                margin: 0px auto 10px auto;
+                width: 290px;
+                height: 190px;
+
+            }
+            .centroParrafo, .parrafoDos {
+                height: auto;
+                font-size: small;
+                justify-content: start;
+
+                   
+            }
+        }
+    }
+
+    //Hablemos
+    main{
+        .imgHablemos {
+            margin: 0 auto;
+            width: 100%;
+        }
+    }
+
+    //Footer mobile/tablet
+    footer {
+       .copy1 {
+            display: none;
+       } 
+       
+       .footerDesktop {
+            display: none;
+       }
+       .footerMobile {
+            display: block;
+            height: auto;
+            padding: 1px;
+            .copy2{
+               margin: 0 auto;
+               align-self: center;
+               font-size: 10px;
+           }
+       }
+       .footerStyle {
+            height: 20vh;
+       }
+    }
+    }
+}
+    
+    
+// TABLET
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header{
+        .titulo {
+            font-size: 50px;
+            color: rgb(5, 70, 21);
+            font-weight:bolder;
+        }
+    }
+    // Page productos
+    main{ 
+        .contenedorCards {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-areas:"card1 card2"
+                                "card3 card4"
+                                "card5 card6"
+                                "card7 card8"
+                                "card9 card10"
+                                "card11 card12";
+            }
+        }
+
+    //Page Nosotras
+    main {
+        margin: 0, auto;
+        h2{
+            font-size: medium;
+            padding-top: 10px;
+
+        }
+        .grillaContainer {
+            height: auto;
+            width: auto;
+            gap: 10 px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas: "item1"
+                                "item2"
+                                "item3"
+                                "item4 ";
+            
+            .parrafo, .parrafo2 {
+                font-size: small;
+                text-align: justify;
+                margin: 0 auto;
+                padding: 0px;
+            }
+            .imgNosotras, .imgNosotras2 {
+                margin: 0 auto;
+                padding: 0px;
+               
+            }
+        }
+    }   
+
+
+    //Page Donde Comprar
+    main {
+        .mainContainer {
+            width: auto;
+            height: auto;
+            margin: 0 auto  ;
+            gap: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                                "mapa"
+                                "direccion"
+                                "video"
+                                "sitioTuristico";
+            
+        .video, .mapa {
+            margin: 0 auto;
+            width: 400px;
+            height: 300px;
+        
+            }
+        .centroParrafo, .parrafoDos {
+            height: auto;
+            font-size: large;
+            
+            }
+        }
+    }
+        
+    //Footer mobile/tablet 
+    footer {
+       .footerDesktop {
+        display: none;
+       }
+       .footerMobile {
+        display: block;
+       }
+       .footerStyle {
+        height: 10vh;    
+       }
+    }
+}

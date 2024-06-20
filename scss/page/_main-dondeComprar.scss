@@ -1,0 +1,87 @@
+main {
+    h2{
+        @extend %subtitulo;
+    }
+  
+    .tracking-in-contract-bck {
+        -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    @-webkit-keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+                  transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+                  transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+   
+    .mainContainer {
+        display: grid;
+        @include position(20px, auto, 90vw, null);
+        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "mapa direccion"
+                            "video sitioTuristico";
+        .mapa{
+            grid-area: mapa;
+            width: 600px;
+            height: 450px;
+        }
+        .video {
+            grid-area: video;
+            width: 600px;
+            height: 450px;
+        }
+        .centroParrafo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-size: 18px;
+            grid-area: direccion;
+            text-align: justify;
+            h3 {
+              font-size: larger;
+            }
+            
+        }
+          .parrafoDos {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center ;
+            font-size: 18px;
+            grid-area: sitioTuristico;
+            text-align: justify;
+            h3 {
+              font-size: larger;
+            }
+          }
+    }
+}

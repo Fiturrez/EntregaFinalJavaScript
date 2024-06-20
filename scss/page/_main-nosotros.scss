@@ -1,0 +1,79 @@
+main {
+    h2{
+        @extend %subtitulo
+    };
+    .tracking-in-contract-bck {
+        -webkit-animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    }
+    @-webkit-keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+                  transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+      @keyframes tracking-in-contract-bck {
+        0% {
+          letter-spacing: 1em;
+          -webkit-transform: translateZ(400px);
+                  transform: translateZ(400px);
+          opacity: 0;
+        }
+        40% {
+          opacity: 0.6;
+        }
+        100% {
+          -webkit-transform: translateZ(0);
+                  transform: translateZ(0);
+          opacity: 1;
+        }
+      }
+    .grillaContainer {
+        display: grid;
+        @include position (20px, auto, 80vw, null);
+        gap: 15px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: "item1 item2"
+                            "item4 item3";
+
+        .imgNosotras {
+            width: 90%;
+            height: auto;
+            grid-area: item1;
+        }
+        .parrafo {
+            grid-area: item2;
+            flex-direction: column;
+            text-align: justify;
+            margin-top: 15px;
+              h3 {
+                text-align:left;
+              }
+        }
+        .imgNosotras2 {
+            width: 90%;
+            grid-area: item3;
+        }
+        .parrafo2 {
+            grid-area: item4;
+            flex-direction: column;
+            text-align: justify;
+            margin-top: 15px;
+            padding: 25px 35px 0px 0px;
+              h3 {
+                text-align:left;
+              }
+            }
+          }  
+    }

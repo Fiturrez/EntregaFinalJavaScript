@@ -1,0 +1,96 @@
+main {
+  .carrusel-mobile {
+    display: none;
+  }  
+  .carrusel {
+      display: inline;
+      max-width: 90%;
+      margin: 0px 30px  30px 0px  ;
+      
+      .carousel-item img {
+          max-width: 90%; /* Ajusta el tamano maximo de las imagenes al % del contenedor */
+          height: auto; /* Mantiene la relacion de aspecto de las imagenes */
+          margin: 0 auto; /* para centrar las imagenes*/
+        }
+      .wordsh5 {
+          font-size: 100px;
+          font-family:Verdana, Geneva, Tahoma, sans-serif;
+          color:rgb(238, 230, 82)
+          
+      }
+      .wordsP {
+          font-size: 20px;
+          font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          color: rgb(24, 57, 24);
+      }    
+        
+  }
+  //============
+  .carouselDos {
+      overflow: hidden;
+      width: 100%;
+      padding-bottom: 20px;
+      padding-top: 20px;
+    }
+    
+    .image-strip {
+      display: flex;
+      animation-name: scrollImages;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+    
+    @keyframes scrollImages {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); /* Desplaza las imágenes hacia la izquierda */
+      }
+    }
+    
+    .image-strip img {
+      flex: 0 0 auto;
+      width: 20%; /* Para que las imágenes ocupen todo el ancho del carrusel */
+      height: 30%;
+    }
+    .contenedor {
+      display: grid;
+      margin: 0 auto;
+      width: 100%;
+      height: auto;
+      font-size: 15px;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "itemMain1";
+      overflow: hidden;
+      
+      .itemMain1 {
+        color: rgb(3, 81, 3);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 5px;
+        animation-name: desplazamiento;
+        animation-duration: 10s;
+        animation-timing-function:linear;
+        animation-iteration-count: infinite;
+      }
+      @keyframes desplazamiento {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+      .itemMain2{
+        display: none;
+      }
+    }
+  }
+
+
+
