@@ -64,6 +64,45 @@ header .titulo .titulo2 {
   margin-left: 15px;
 }
 
+
+/* Estilos para el carrito en la navbar */
+#cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+}
+
+#cart-items {
+  display: none; /* Inicialmente oculto, será visible cuando haya items */
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+#cart-items li {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+
+#cart-items li:last-child {
+  border-bottom: none;
+  
+}
+
+#cart .btn {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  background-color: #15907e;
+  border-color: #044137;
+}
+
 main .carrusel-mobile {
   display: none;
 }
