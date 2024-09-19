@@ -10,9 +10,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 denyButton: 'custom-deny-button',
                 container: 'custom-swal-container'
             }
+        
         }).then((result) => {
             if (result.isConfirmed) {    
-                window.location.href = '../pages/hablemos.html'; 
+                window.location.href = "./pages/hablemos.html"; 
             } else if (result.isDenied) {
                  setTimeout(mostrarSuscripcion, 20000); 
                 };
