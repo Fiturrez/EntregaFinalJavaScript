@@ -1,6 +1,19 @@
 let productos = [];
 let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
 
+//para verificar si sube correctamente el catalogo
+fetch('../json/catalogo.json')
+    .then(response => {
+        console.log(response); // Muestra la respuesta en la consola
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        return response.json();
+    })
+    .then(data => console.log(data))
+    .catch(error => console.error('Error al cargar los productos:', error));
+
+
 async function cargarProductos() {
     try {
         const response = await fetch("/json/catalogo.json");
