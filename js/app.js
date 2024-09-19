@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }).then((result) => {
             if (result.isConfirmed) {    
-                window.location.href = '/pages/hablemos.html'; 
+                window.location.href = '../pages/hablemos.html'; 
             } else if (result.isDenied) {
                  setTimeout(mostrarSuscripcion, 20000); 
                 };
