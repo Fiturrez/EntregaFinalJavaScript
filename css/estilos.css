@@ -66,42 +66,88 @@ header .titulo .titulo2 {
 
 
 /* Estilos para el carrito en la navbar */
-#cart {
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0 15px;
-}
 
-#cart-items {
-  display: none; /* Inicialmente oculto, será visible cuando haya items */
+.cart-view {
+  display: none; /* Oculta el carrito por defecto */
   position: absolute;
-  top: 100%;
-  right: 0;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 50px;
+  right: 10px;
+  width: 300px; /* Ancho fijo del carrito */
+  min-width: 200px; 
+  border: 1px solid #ddd;
+  background: rgb(236, 237, 237);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   z-index: 1000;
-  max-height: 200px;
-  overflow-y: auto;
 }
 
-#cart-items li {
-  padding: 8px 12px;
-  border-bottom: 1px solid #eee;
+.cart-view ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-#cart-items li:last-child {
-  border-bottom: none;
+.cart-view li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  background-color:#80d6c9 ;
+  font-size: small;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cart-view .remove-item {
+  cursor: pointer;
+  /* color: #09451f; */
+  color: fuchsia;
+  font-weight: bolder;
   
 }
 
-#cart .btn {
-  padding: 5px 10px;
-  font-size: 0.9rem;
-  background-color: #15907e;
-  border-color: #044137;
+.cart {
+  display: flex;
+  align-items: center;
+  position: relative; /* Asegura que el contador se posicione relativo a este contenedor */
 }
+
+.cart-count {
+  position: absolute;
+  top: -10px; /* Ajusta la posición vertical según sea necesario */
+  right: -10px; /* Ajusta la posición horizontal para que esté al lado del ícono */
+  background: rgb(92, 215, 141);
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-bag-shopping{
+  color: #09451f;
+  font-size: 2.5rem;
+}
+
+.btn-danger {
+  background-color: #09451f;
+  border: #46bcaa;
+}
+
+/* Estilo sweetAlert */
+.custom-confirm-button {
+  background-color: rgb(121, 222, 238); 
+  color:black; 
+  border: solid black; 
+}
+.custom-deny-button {
+  background-color: #25c789; 
+  color: black;
+  border: solid black; 
+}
+
+
 
 main .carrusel-mobile {
   display: none;
@@ -486,7 +532,7 @@ main .container .imgHablemos {
   width: 100%;
 }
 main .container .formulario {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 main .container button {
   border: #044137;

@@ -1,0 +1,52 @@
+[
+    {"producto": 1,
+     "nombre": "Cartera Leonor",
+     "precio": 65000
+    },
+    {"producto": 2,
+     "nombre": "Cartera Lourdes M",
+     "precio": 60000
+    },
+    {"producto": 3,
+     "nombre": "Cartera Lourdes S",
+     "precio": 50000
+    },
+    {"producto": 4,
+     "nombre": "Cartera Mochila ED",
+     "precio": 50000
+    },
+
+    {"producto": 5,
+     "nombre": "Portacelular A",
+     "precio": 15000
+    },
+    {"producto": 6,
+     "nombre": "Portacelular B",
+     "precio": 15000
+    },
+    {"producto": 7,
+     "nombre": "Maletin Lisboa",
+     "precio": 55000
+    },
+    {"producto": 8,
+     "nombre": "Rinonera Bordeaux",
+     "precio": 35000
+    },
+    
+    {"producto": 9,
+     "nombre": "Libreta Arg",
+     "precio": 8000
+    },
+    {"producto": 10,
+     "nombre": "Tarjetero Uno",
+     "precio": 5000
+    },
+    {"producto": 11,
+     "nombre": "Tarjetero Dos",
+     "precio": 5000
+    },
+    {"producto": 12,
+     "nombre": "Monedero",
+     "precio": 6000
+    } 
+]

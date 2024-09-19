@@ -17,6 +17,7 @@
 
     <!--Vinculacion con archivo CSS-->
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,34 +62,42 @@
                         </li>
                     </ul>
                 </div>
+               
             </div>
         </nav>
         <h1 class="titulo h1-desktop">Hilaria <span class="titulo2">Handmade</span></h1>
     </header>
     
     <main>
-        <h2 class="tracking-in-contract-bck">Contacto</h2>
+        <h2 class="tracking-in-contract-bck">Suscribite y recibí todas las novedades!</h2>
+        
         <section class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img src="../Imagenes/DSC_7267.jpg" alt="Imagen mochila en Roma" class="imgHablemos">
-                </div>
-                <div class="col-lg-6">
-                    <div class="mb-3 formulario">
-                        <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="row">
+              <div class="col-lg-6">
+                  <img src="../Imagenes/DSC_7267.jpg" alt="Imagen mochila en Roma" class="imgHablemos">
+              </div>
+              <div class="col-lg-6">
+                  <form id="contactForm">
+                      <div class="mb-3 formulario">
+                          <label for="nombre" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" id="nombre" placeholder="Cómo te llamas?" required  autocomplete="name">
+                      </div>
+                      <div class="mb-3 formulario">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="name@example.com" required autocomplete="email">
                       </div>
                       <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          <label for="comentarios" class="form-label">Comentarios</label>
+                          <textarea class="form-control" id="comentarios" rows="3" placeholder="Tenes algún comentario o consulta?" autocomplete="off"></textarea>
                       </div>
-                        <div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </form>
-                </div>
-             </div>
-        </section>
+                      <div>
+                          <button type="submit" class="btn btn-primary">Suscribirme</button>
+                      </div>
+                  </form>
+              </div>
+          </div>
+      </section>
+      
     </main>
      <!-- FOOTER -->
     <footer>
@@ -162,7 +171,9 @@
     </footer>
 
   <!-- script JS  -->
- <script src="./script.js"></script>
+ <script src="../js/contacto.js"></script>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
   <!-- script js Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
